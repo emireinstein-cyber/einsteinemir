@@ -19,6 +19,8 @@
       background: #444;
       padding: 10px;
       text-align: center;
+      position: sticky;
+      top: 0;
     }
     nav a {
       color: white;
@@ -32,16 +34,14 @@
     main {
       padding: 20px;
     }
-    .haber {
-      margin-bottom: 30px;
+    section {
+      margin-bottom: 50px;
     }
-    .haber img {
+    section img {
       max-width: 100%;
       height: auto;
       border-radius: 5px;
-    }
-    .haber h2 {
-      margin: 10px 0 5px 0;
+      margin-top: 10px;
     }
     footer {
       background: #222;
@@ -60,24 +60,32 @@
 
   <!-- Menü -->
   <nav>
-    <a href="#">Gündem</a>
-    <a href="#">Türkiye</a>
-    <a href="#">Adana</a>
+    <a href="#gundem">Gündem</a>
+    <a href="#turkiye">Türkiye</a>
+    <a href="#adana">Adana</a>
   </nav>
 
   <main>
-    <!-- Haber 1 -->
-    <div class="haber">
-      <h2>İlk Haber Başlığı</h2>
-      <img src="images/fotograf1.png" alt="Haber Görseli">
-      <p>Bu alana haber metni. : "Deklare.net çok yakında yayında!"</p>
-    </div>
+    <!-- Gündem Bölümü -->
+    <section id="gundem">
+      <h2>Gündem</h2>
+      <p> Gündem haberleri.</p>
+      <img src="images/gundem.png" alt="Gündem Görseli">
+    </section>
 
-    <!-- Haber 2 -->
-    <div class="haber">
-      <h2>İkinci Haber Başlığı</h2>
-      <p>Görsel alanı.</p>
-    </div>
+    <!-- Türkiye Bölümü -->
+    <section id="turkiye">
+      <h2>Türkiye</h2>
+      <p> Türkiye Haberleri.</p>
+      <img src="images/turkiye.png" alt="Türkiye Görseli">
+    </section>
+
+    <!-- Adana Bölümü -->
+    <section id="adana">
+      <h2>Adana</h2>
+      <p> Adana haberleri.</p>
+      <img src="images/adana.png" alt="Adana Görseli">
+    </section>
   </main>
 
   <footer>
